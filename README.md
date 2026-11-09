@@ -176,6 +176,8 @@ CI uses Python 3.11.9 on Ubuntu 24.04, Intel macOS 15 and Windows Server 2022,
 with actions pinned to verified commit IDs. Those interpreter builds were checked
 against the [official manifest](https://github.com/actions/python-versions/blob/main/versions-manifest.json).
 CI tests the portable implementation and recorded evidence, not neural inference.
+Strict type checking targets Linux consistently because the optional model runner
+uses the POSIX resource API; runtime tests execute on all three host platforms.
 Coverage gates the portable modules at 90%; the optional native model runner is
 excluded and exercised by the recorded local evaluation.
 
