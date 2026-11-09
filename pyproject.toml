@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "agent-context-budget"
-version = "0.1.0"
+version = "0.1.1"
 description = "Auditable local experiments on evidence lost under context budgets"
 requires-python = ">=3.11"
 license = "MIT"

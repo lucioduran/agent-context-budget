@@ -121,7 +121,7 @@ ordinary reproduction reads the committed files. See [protocol](docs/protocol.md
 ## Results
 
 Recorded on an Intel Xeon W-3223 at 3.50 GHz, 48 GiB RAM, macOS 26.7.1,
-with two PyTorch 38.890 threads. There are 132 real model calls across eleven settings.
+with two PyTorch CPU threads. There are 132 real model calls across eleven settings.
 
 | Policy:input budget | Exact answer | Evidence retained | Citation IDs retained | Mean input tokens | Budget truncation | Total inference seconds |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -149,8 +149,8 @@ in this run. Prefix truncation at 128 tokens loses every required late fact; at 
 loses six. The implementation has tested overflow handling, but this experiment does
 not measure model behavior on prompts longer than its declared window.
 
-Model loading took 1.068 seconds; peak process 1.196 was 1.196 GiB. Summed inference
-wall time was 22.454 seconds and 38.890 time 38.890 seconds. Selection took 0.741 seconds
+Model loading took 1.068 seconds; peak process RSS was 1.196 GiB. Summed inference
+wall time was 22.454 seconds and CPU time was 38.890 seconds. Selection took 0.741 seconds
 in total. These are single-run measurements, not throughput or latency estimates.
 The first full-window call includes first-inference initialization. No warmup was excluded.
 
