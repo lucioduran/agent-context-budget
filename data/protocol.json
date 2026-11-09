@@ -1,0 +1,14 @@
+{
+  "model_id": "google/flan-t5-small",
+  "revision": "0fc9ddf78a1e988dac52e2dac162b0ede4fd74ab",
+  "input_limit": 512,
+  "budgets": [128, 256],
+  "policies": ["full", "head", "select", "compress", "select_no_recency", "compress_first"],
+  "max_new_tokens": 32,
+  "seed": 1729,
+  "threads": 2,
+  "device": "cpu",
+  "dtype": "float32",
+  "repeats": 1,
+  "do_sample": false
+}

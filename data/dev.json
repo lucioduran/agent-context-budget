@@ -1,0 +1,96 @@
+{
+  "split": "dev",
+  "tasks": [
+    {
+      "id": "dev-01",
+      "category": "late",
+      "question": "What is the current Demo access code?",
+      "documents": [
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Demo access code is 1234."
+        }
+      ],
+      "answers": [
+        "1234"
+      ],
+      "evidence": {
+        "latest": "The current Demo access code is 1234."
+      }
+    },
+    {
+      "id": "dev-02",
+      "category": "contradiction",
+      "question": "What is the current Sample access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Sample access code is 2222."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note2",
+          "order": 3,
+          "text": "Archive note 2: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note3",
+          "order": 4,
+          "text": "Archive note 3: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note4",
+          "order": 5,
+          "text": "Archive note 4: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note5",
+          "order": 6,
+          "text": "Archive note 5: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note6",
+          "order": 7,
+          "text": "Archive note 6: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note7",
+          "order": 8,
+          "text": "Archive note 7: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Sample access code is 5678."
+        }
+      ],
+      "answers": [
+        "5678"
+      ],
+      "evidence": {
+        "latest": "The current Sample access code is 5678."
+      }
+    }
+  ]
+}

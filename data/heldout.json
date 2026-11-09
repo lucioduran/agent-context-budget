@@ -1,0 +1,561 @@
+{
+  "split": "heldout",
+  "tasks": [
+    {
+      "id": "heldout-01",
+      "category": "late",
+      "question": "What is the current Orchid access code?",
+      "documents": [
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Orchid access code is 7391."
+        }
+      ],
+      "answers": [
+        "7391"
+      ],
+      "evidence": {
+        "latest": "The current Orchid access code is 7391."
+      }
+    },
+    {
+      "id": "heldout-02",
+      "category": "contradiction",
+      "question": "What is the current Harbor access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Harbor access code is 2211."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note2",
+          "order": 3,
+          "text": "Archive note 2: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note3",
+          "order": 4,
+          "text": "Archive note 3: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note4",
+          "order": 5,
+          "text": "Archive note 4: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note5",
+          "order": 6,
+          "text": "Archive note 5: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note6",
+          "order": 7,
+          "text": "Archive note 6: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note7",
+          "order": 8,
+          "text": "Archive note 7: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Harbor access code is 8642."
+        }
+      ],
+      "answers": [
+        "8642"
+      ],
+      "evidence": {
+        "latest": "The current Harbor access code is 8642."
+      }
+    },
+    {
+      "id": "heldout-03",
+      "category": "buried_correction",
+      "question": "What is the current Cedar access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Cedar access code is 3443."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "This record contains a routine administrative update. The current Cedar access code is 5926."
+        }
+      ],
+      "answers": [
+        "5926"
+      ],
+      "evidence": {
+        "latest": "The current Cedar access code is 5926."
+      }
+    },
+    {
+      "id": "heldout-04",
+      "category": "late",
+      "question": "What is the current Willow access code?",
+      "documents": [
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note2",
+          "order": 3,
+          "text": "Archive note 2: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note3",
+          "order": 4,
+          "text": "Archive note 3: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note4",
+          "order": 5,
+          "text": "Archive note 4: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note5",
+          "order": 6,
+          "text": "Archive note 5: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note6",
+          "order": 7,
+          "text": "Archive note 6: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note7",
+          "order": 8,
+          "text": "Archive note 7: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Willow access code is 8173."
+        }
+      ],
+      "answers": [
+        "8173"
+      ],
+      "evidence": {
+        "latest": "The current Willow access code is 8173."
+      }
+    },
+    {
+      "id": "heldout-05",
+      "category": "contradiction",
+      "question": "What is the current Quartz access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Quartz access code is 5665."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Quartz access code is 9362."
+        }
+      ],
+      "answers": [
+        "9362"
+      ],
+      "evidence": {
+        "latest": "The current Quartz access code is 9362."
+      }
+    },
+    {
+      "id": "heldout-06",
+      "category": "buried_correction",
+      "question": "What is the current Maple access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Maple access code is 6776."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note2",
+          "order": 3,
+          "text": "Archive note 2: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note3",
+          "order": 4,
+          "text": "Archive note 3: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note4",
+          "order": 5,
+          "text": "Archive note 4: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note5",
+          "order": 6,
+          "text": "Archive note 5: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note6",
+          "order": 7,
+          "text": "Archive note 6: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note7",
+          "order": 8,
+          "text": "Archive note 7: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "This record contains a routine administrative update. The current Maple access code is 2849."
+        }
+      ],
+      "answers": [
+        "2849"
+      ],
+      "evidence": {
+        "latest": "The current Maple access code is 2849."
+      }
+    },
+    {
+      "id": "heldout-07",
+      "category": "late",
+      "question": "What is the current Copper access code?",
+      "documents": [
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Copper access code is 6518."
+        }
+      ],
+      "answers": [
+        "6518"
+      ],
+      "evidence": {
+        "latest": "The current Copper access code is 6518."
+      }
+    },
+    {
+      "id": "heldout-08",
+      "category": "contradiction",
+      "question": "What is the current Falcon access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Falcon access code is 8998."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note2",
+          "order": 3,
+          "text": "Archive note 2: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note3",
+          "order": 4,
+          "text": "Archive note 3: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note4",
+          "order": 5,
+          "text": "Archive note 4: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note5",
+          "order": 6,
+          "text": "Archive note 5: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note6",
+          "order": 7,
+          "text": "Archive note 6: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note7",
+          "order": 8,
+          "text": "Archive note 7: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Falcon access code is 4729."
+        }
+      ],
+      "answers": [
+        "4729"
+      ],
+      "evidence": {
+        "latest": "The current Falcon access code is 4729."
+      }
+    },
+    {
+      "id": "heldout-09",
+      "category": "buried_correction",
+      "question": "What is the current Birch access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Birch access code is 9009."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "This record contains a routine administrative update. The current Birch access code is 1836."
+        }
+      ],
+      "answers": [
+        "1836"
+      ],
+      "evidence": {
+        "latest": "The current Birch access code is 1836."
+      }
+    },
+    {
+      "id": "heldout-10",
+      "category": "late",
+      "question": "What is the current Coral access code?",
+      "documents": [
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note2",
+          "order": 3,
+          "text": "Archive note 2: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note3",
+          "order": 4,
+          "text": "Archive note 3: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note4",
+          "order": 5,
+          "text": "Archive note 4: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note5",
+          "order": 6,
+          "text": "Archive note 5: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note6",
+          "order": 7,
+          "text": "Archive note 6: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note7",
+          "order": 8,
+          "text": "Archive note 7: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Coral access code is 7258."
+        }
+      ],
+      "answers": [
+        "7258"
+      ],
+      "evidence": {
+        "latest": "The current Coral access code is 7258."
+      }
+    },
+    {
+      "id": "heldout-11",
+      "category": "contradiction",
+      "question": "What is the current Aspen access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Aspen access code is 2020."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "The current Aspen access code is 3496."
+        }
+      ],
+      "answers": [
+        "3496"
+      ],
+      "evidence": {
+        "latest": "The current Aspen access code is 3496."
+      }
+    },
+    {
+      "id": "heldout-12",
+      "category": "buried_correction",
+      "question": "What is the current Juniper access code?",
+      "documents": [
+        {
+          "id": "old",
+          "order": 0,
+          "text": "The current Juniper access code is 3030."
+        },
+        {
+          "id": "note0",
+          "order": 1,
+          "text": "Archive note 0: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note1",
+          "order": 2,
+          "text": "Archive note 1: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note2",
+          "order": 3,
+          "text": "Archive note 2: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note3",
+          "order": 4,
+          "text": "Archive note 3: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note4",
+          "order": 5,
+          "text": "Archive note 4: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note5",
+          "order": 6,
+          "text": "Archive note 5: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note6",
+          "order": 7,
+          "text": "Archive note 6: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "note7",
+          "order": 8,
+          "text": "Archive note 7: The training room contains chairs and desks. Visitors should keep the corridors clear. Equipment checks happen weekly. The office handbook lists cleaning procedures and contact details."
+        },
+        {
+          "id": "latest",
+          "order": 100,
+          "text": "This record contains a routine administrative update. The current Juniper access code is 9581."
+        }
+      ],
+      "answers": [
+        "9581"
+      ],
+      "evidence": {
+        "latest": "The current Juniper access code is 9581."
+      }
+    }
+  ]
+}
