@@ -45,7 +45,12 @@ def parse_tasks(raw: Any) -> list[Task]:
     seen = set()
     for item in raw["tasks"]:
         if not isinstance(item, dict) or set(item) != {
-            "id", "category", "question", "documents", "answers", "evidence"
+            "id",
+            "category",
+            "question",
+            "documents",
+            "answers",
+            "evidence",
         }:
             raise ValueError("Invalid task fields")
         if not all(nonempty(item[k]) for k in ("id", "category", "question")):
@@ -81,8 +86,16 @@ def parse_tasks(raw: Any) -> list[Task]:
                 raise ValueError("Unknown or empty evidence")
             if fragment not in next(d.text for d in docs if d.id == key):
                 raise ValueError("Evidence must be a verbatim fragment")
-        tasks.append(Task(item["id"], item["category"], item["question"],
-                          tuple(sorted(docs, key=lambda d: d.order)), tuple(answers), evidence))
+        tasks.append(
+            Task(
+                item["id"],
+                item["category"],
+                item["question"],
+                tuple(sorted(docs, key=lambda d: d.order)),
+                tuple(answers),
+                evidence,
+            )
+        )
     if not tasks:
         raise ValueError("Tasks must not be empty")
     return tasks
@@ -129,9 +142,13 @@ def select(task: Task, policy: str, budget: int, limit: int, tok: Tokenizer) -> 
         raise ValueError("Budget cannot fit the question and instructions")
     docs = list(task.documents)
     if policy in ("select", "compress", "compress_first", "select_no_recency"):
-        docs.sort(key=lambda d: (overlap(task.question, d.text),
-                                d.order if policy != "select_no_recency" else -d.order),
-                  reverse=True)
+        docs.sort(
+            key=lambda d: (
+                overlap(task.question, d.text),
+                d.order if policy != "select_no_recency" else -d.order,
+            ),
+            reverse=True,
+        )
     candidates = []
     for doc in docs:
         text = doc.text
@@ -140,8 +157,10 @@ def select(task: Task, policy: str, budget: int, limit: int, tok: Tokenizer) -> 
             if policy == "compress_first":
                 text = sentences[0]
             else:
-                text = max(enumerate(sentences),
-                           key=lambda pair: (overlap(task.question, pair[1]), pair[0]))[1]
+                text = max(
+                    enumerate(sentences),
+                    key=lambda pair: (overlap(task.question, pair[1]), pair[0]),
+                )[1]
         candidates.append((doc, text))
     original = prompt(task.question, "\n".join(f"[{d.id}] {d.text}" for d in task.documents))
     selected: list[dict[str, Any]] = []
@@ -170,8 +189,16 @@ def select(task: Task, policy: str, budget: int, limit: int, tok: Tokenizer) -> 
     final = prompt(task.question, render())
     included = {s["id"] for s in selected}
     omitted = [d.id for d in task.documents if d.id not in included]
-    return Selection(policy, cap, final, tok.encode(final), len(tok.encode(original)),
-                     selected, omitted, truncated or bool(omitted))
+    return Selection(
+        policy,
+        cap,
+        final,
+        tok.encode(final),
+        len(tok.encode(original)),
+        selected,
+        omitted,
+        truncated or bool(omitted),
+    )
 
 
 def normalize(text: str) -> str:
@@ -182,8 +209,11 @@ def score(task: Task, selection: Selection, response: str) -> dict[str, Any]:
     citations = set(re.findall(r"\[([A-Za-z0-9_-]+)\]", response))
     answer = re.sub(r"\[[^\]]*\]", "", response)
     selected = {s["id"]: s["text"] for s in selection.selected}
-    retained = [key for key, fragment in task.evidence.items()
-                if key in selected and normalize(fragment) in normalize(selected[key])]
+    retained = [
+        key
+        for key, fragment in task.evidence.items()
+        if key in selected and normalize(fragment) in normalize(selected[key])
+    ]
     lost = {key: fragment for key, fragment in task.evidence.items() if key not in retained}
     correct = normalize(answer) in {normalize(a) for a in task.answers}
     gold = set(task.evidence)
@@ -193,8 +223,10 @@ def score(task: Task, selection: Selection, response: str) -> dict[str, Any]:
         "retained_citation_recall": len(gold & selected.keys()) / len(gold),
         "output_citation_recall": len(citations & gold) / len(gold),
         "output_citation_precision": len(citations & gold) / len(citations) if citations else 0.0,
-        "grounded_exact": correct and gold <= citations and gold <= set(retained)
-                          and citations <= gold,
+        "grounded_exact": correct
+        and gold <= citations
+        and gold <= set(retained)
+        and citations <= gold,
         "lost_evidence": lost,
         "unknown_citations": sorted(citations - {d.id for d in task.documents}),
     }
