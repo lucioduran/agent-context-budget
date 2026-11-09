@@ -25,8 +25,10 @@ ablations expose losses from stale evidence and discarded corrections.
 
 There are four tasks in each category: late evidence, conflicting old evidence,
 and a correction buried in a later sentence. Each category has two short and two
-long contexts. Long contexts exceed the input window; a bounded full-window result
-must not be described as an untruncated oracle. This corpus only tests one required
+long contexts. The initial pre-run expectation was that long contexts would exceed the input
+window. Actual tokenization measured 142 to 418 tokens, so that expectation was
+wrong: they exceed the smaller budgets, but not the 512-token window. The frozen
+fixtures were not changed. A bounded full-window policy is not an unlimited oracle. This corpus only tests one required
 evidence record per question and numeric code answers.
 
 Exact answer match removes bracketed citations and normalizes case, whitespace and
